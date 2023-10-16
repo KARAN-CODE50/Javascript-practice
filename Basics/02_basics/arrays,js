@@ -1,0 +1,50 @@
+const myArray = [0,1,2,3,4,5]
+// can be of same type or different types also 
+// is an object and resizable 
+
+// shallow copy and deep copy 
+// shallow copy me refercne point hota h to original array bhi change hoga kuch bhi change krne se 
+// deep copy copy me change nhi hota h 
+
+// js me array shallow copy create krta h
+
+const myHeros = ["marvel" , "gifia"]
+
+const myArr2  = new Array(1,2,3,4)
+
+// aise bhi array declare kr skte h and whi fayada ki prototype access mil jata h 
+// bracket nhi lgana pdta auto lg jata h 
+
+// Array methods 
+
+myArr2.push(10)
+myArr2.pop()       // remove last element
+
+console.log(myArr2.includes(4)) 
+console.log(myArr2.indexOf(5))   // agar hoga to bata dega index nhi to -1 return krdega 
+
+const newArr = myArr2.join()
+console.log(myArr2)
+console.log(newArr)    // join is array ko join krke string me convert krke return krdeta h 
+
+// slice , splice 
+
+// very imp ***
+// main difference is that slice does not change or manipulate the original array while splice changes the original array 
+
+console.log("A " , myArr2);
+
+const myn1 = myArr2.slice(1,3)
+console.log(myn1)
+console.log(myArr2)
+
+const myn2 = myArr2.splice(1,3)
+console.log(myn2)
+console.log(myArr2)
+
+// yaha difference pata chal jayega 
+// ki splice me jo elements h wo array se remove hi ho jate h direct
+
+
+
+
